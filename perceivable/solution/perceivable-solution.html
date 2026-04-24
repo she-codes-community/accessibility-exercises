@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Perceivable Exercise</title>
+  <link rel="stylesheet" href="perceivable-solution.css">
+</head>
+
+<body>
+  <h1>Perceivable Exercise</h1>
+
+  <p>Get updates and special offers by email</p>
+
+  <img 
+    src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" 
+    alt="Person working on a laptop"
+    width="300"
+  >
+
+  <form id="form">
+    <label for="email">Email</label><br>
+    <input id="email" type="email"><br>
+
+    <p id="email-error" class="error-message">
+      Email is required
+    </p>
+
+    <button class="btn" type="button" onclick="showError()">
+      Subscribe
+    </button>
+  </form>
+
+  <script>
+    function showError() {
+      const input = document.getElementById("email");
+      const errorMessage = document.getElementById("email-error");
+
+      input.classList.add("error-input");
+      errorMessage.style.display = "block";
+    }
+  </script>
+</body>
+</html>
