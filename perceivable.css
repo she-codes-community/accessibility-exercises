@@ -1,0 +1,15 @@
+body {
+  font-family: Arial;
+  background: #ffffff;
+  color: #cccccc; /* ניגודיות נמוכה */
+  font-size: 12px; /* קטן מדי */
+}
+
+.error-input {
+  border: 2px solid red; /* שגיאה רק בצבע */
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+}
