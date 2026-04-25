@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #222;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.page {
+  max-width: 600px;
+}
+
+/* מבנה */
+.hero {
+  margin-bottom: 24px;
+}
+
+.hero-image {
+  width: 100%;
+  margin-top: 12px;
+}
+
+/* טקסט */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  color: #555;
+}
+
+.instructions {
+  margin-bottom: 12px;
+}
+
+/* טופס */
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+}
+
+/* שגיאה */
+.error {
+  color: #b00020;
+  display: none;
+  margin-bottom: 10px;
+}
+
+/* כפתור */
+button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* focus ברור */
+button:focus,
+input:focus,
+a:focus {
+  outline: 3px solid orange;
+  outline-offset: 2px;
+}
