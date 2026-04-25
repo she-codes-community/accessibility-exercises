@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+  background: #ffffff;
+  color: #bcbcbc;
+  font-size: 12px;
+  padding: 20px;
+}
+
+.page {
+  max-width: 600px;
+}
+
+.hero-image {
+  width: 100%;
+  margin-top: 12px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+.fake-button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* ❌ focus לא נראה */
+*:focus {
+  outline: none;
+}
