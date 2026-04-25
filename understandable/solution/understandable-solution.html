@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understandable Exercise</title>
+  <link rel="stylesheet" href="understandable-solution.css">
+</head>
+
+<body>
+  <main class="card">
+    <h1>Subscribe to our newsletter</h1>
+
+    <p>Enter your email to receive updates</p>
+
+    <form>
+      <label for="email">Email address</label>
+      
+      <input 
+        id="email" 
+        type="email" 
+        placeholder="example@mail.com"
+      >
+
+      <p id="email-error" class="error">
+        Please enter a valid email address
+      </p>
+
+      <button type="button" onclick="validateEmail()">
+        Subscribe
+      </button>
+    </form>
+  </main>
+
+  <script>
+    function validateEmail() {
+      const input = document.getElementById("email");
+      const error = document.getElementById("email-error");
+
+      const value = input.value;
+
+      if (!value.includes("@")) {
+        error.style.display = "block";
+      } else {
+        error.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>

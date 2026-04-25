@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.card {
+  max-width: 320px;
+}
+
+label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.error {
+  color: #b00020;
+  display: none;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:focus,
+input:focus {
+  outline: 3px solid orange;
+  outline-offset: 2px;
+}
