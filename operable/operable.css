@@ -1,0 +1,17 @@
+body {
+  font-family: Arial;
+  padding: 20px;
+}
+
+.fake-button {
+  background: blue;
+  color: white;
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* ❌ מבטל focus */
+*:focus {
+  outline: none;
+}
