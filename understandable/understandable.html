@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Understandable Exercise</title>
+  <link rel="stylesheet" href="understandable.css">
+</head>
+
+<body>
+  <main class="card">
+    <h1>Understandable Exercise</h1>
+
+    <p>Enter details</p>
+
+    <form>
+      <!-- אין label -->
+      <input id="email" type="text" placeholder="Email">
+
+      <!-- הודעת שגיאה לא ברורה -->
+      <p id="email-error" class="error">Error</p>
+
+      <!-- כפתור לא ברור -->
+      <button type="button" onclick="validateEmail()">Send</button>
+    </form>
+  </main>
+
+  <script>
+    function validateEmail() {
+      const input = document.getElementById("email");
+      const error = document.getElementById("email-error");
+
+      const value = input.value;
+
+      if (!value.includes("@")) {
+        error.style.display = "block";
+      } else {
+        error.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
